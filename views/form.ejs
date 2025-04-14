@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Person Form</title></head>
+<body>
+  <h1><%= person._id ? 'Edit Person' : 'New Person' %></h1>
+  <form action="<%= action %>" method="POST">
+    <input type="text" name="name" placeholder="Name" value="<%= person.name %>" required/><br>
+    <input type="number" name="age" placeholder="Age" value="<%= person.age %>" required/><br>
+    <input type="text" name="gender" placeholder="Gender" value="<%= person.gender %>" required/><br>
+    <input type="text" name="mobile" placeholder="Mobile" value="<%= person.mobile %>" required/><br>
+    <button type="submit">Submit</button>
+  </form>
+  <a href="/person">Back</a>
+</body>
+</html>
