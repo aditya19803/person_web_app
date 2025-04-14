@@ -1,0 +1,6 @@
+npm init -y
+npm install express mongoose ejs dotenv body-parser
+npm install --save-dev nodemon
+"scripts": {
+  "start": "nodemon server.js"
+}
